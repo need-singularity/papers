@@ -1,11 +1,9 @@
 #!hexa strict
 // cross_repo_publish/core/source.hexa — cross-repo publish flow contract
 //
-// @tool(slug="cross_repo_publish_source", desc="Single canonical contract every publish-flow operation module (publish, sync, validate) satisfies. Routes sister-repo paper artifacts into papers/<sub>/ via own#9 (canonical archive locus).")
 // @usage(hexa /Users/ghost/core/papers/cross_repo_publish/core/source.hexa)
 // @omega-saturation-exempt("interface-only; no I/O")
 //
-// raw#9 hexa-only strict. raw#15 SSOT this file for the cross-repo publish contract.
 // raw 270/271/272/273 (mk2 arch.001): T0 source layer of canonical 4-file pattern.
 //
 // CONTRACT (every operation module under cross_repo_publish/module/ must export):
@@ -15,16 +13,13 @@
 // REFERENCED tool/ FILES (use/link/deps; in-place change FORBIDDEN per BG policy):
 //   tool/zenodo_publish.hexa            — single-paper Zenodo publish      (619 LOC)
 //   tool/zenodo_sync.hexa               — manifest <-> Zenodo reconcile    (207 LOC)
-//   tool/papers_cross_repo_lint.hexa    — own#9 sister-repo lint v1.2      (388 LOC)
 //   tool/orphan_paper_scan.hexa         — orphan paper scanner             ( 77 LOC)
 //   tool/continuous_scan.hexa           — continuous DOI/orphan scan       (141 LOC)
 //   tool/missing_doi_scan.hexa          — missing DOI scanner              ( 55 LOC)
 //   tool/doi_verify.hexa                — DOI link health verifier         (201 LOC)
 //
-// raw#10 caveats:
 //   (1) tool/* files remain authoritative. cross_repo_publish/module/* are
 //       FACADE entries delegating via exec("hexa.real tool/<name>.hexa ...").
-//   (2) own#9 enforcement = sister-repo paper artifacts (anima/nexus/n6/
 //       brainwire/sedi/tecs-l) MUST land into papers/<sub>/ only. Sister-repo
 //       self-publish is FORBIDDEN. tool/papers_cross_repo_lint.hexa enforces.
 //   (3) OSF dual-archive Phase 2 stub — tool/osf_publish.hexa NOT in this set

@@ -65,7 +65,6 @@ The qmirror standalone repo follows the same `hx install <pkg>` consumer pattern
 
 The four standalone repos plus the upstream `nexus` discovery engine and the `anima` meta-orchestration layer constitute the consumer pattern: nexus + anima + standalone repos all consume substrates by URL via `hx install`, with no in-tree forks.
 
-## Honest caveats (raw#10 C3) — paper-scope
 
 1. **arXiv draft v0.1 covers v1.0 only.** The on-disk draft `anima/docs/qmirror_arxiv_draft_2026_05_03.md` documents the 8/8 closure axes; the 5 new v2.0 axes (cond.9–cond.13) need a draft refresh before arXiv submission. Refresh blocked on: peer-review pass + LaTeX migration + figure prep + counsel sign-off (license/IP review for the cross-vendor IBM/AWS Braket calibration data + ANU QRNG ToS attribution).
 2. **Cross-link burden grows per release.** Each qmirror version cycle (v1.0.0 → v1.0.1 → v2.0.0) adds another row of cross-link maintenance across 17+ anima docs + 4 sister repos + papers entry + CANON README. Mitigation idea (out-of-scope this cycle): consolidate per-doc xref blocks into a single-source `nexus.qmirror.upstream_url` symbol in `nexus/.roadmap.qmirror`. Without that, future renames or version bumps require a fan-out sweep.

@@ -6,7 +6,6 @@
 // @omega-saturation-exempt("single-shot per paper-id; idempotent reentry yields no-op when entry already at target state")
 // @exit_codes(0=success or dry-run OK, 1=logical error (bad input), 2=IO error)
 //
-// Migrated from scripts/manifest_update.py (deleted commit 3f61313, raw#9
 // hexa-only cleanup). External contract preserved for the `update` subcommand:
 // same flags, same exit codes, same in-place schema mutation.
 //

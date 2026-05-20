@@ -165,9 +165,7 @@ fn main() {
 
   // ─── PP3 manifest update hook (VERIFY-P2-2) ───
   // raw 91 C3 disclosure: scripts/manifest_update.py removed in commit 3f61313
-  // (raw#9 hexa-only cleanup, no hexa successor yet). PP3 hook is no-op
   // until tool/manifest_update.hexa lands. Manifest writeback skipped.
-  println("  [PP3-HOOK] DISABLED — manifest_update.py removed (raw#9 hexa-only cleanup), no hexa successor yet")
 
   println("=== " + paper_id + " upload complete ===")
 }

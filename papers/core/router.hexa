@@ -5,14 +5,12 @@
 // @usage(hexa /Users/ghost/core/papers/core/papers/router.hexa)
 // @omega-saturation-exempt("read-only routing; selftest is pure")
 //
-// raw#9 hexa-only strict. raw 270/271/272/273 (mk2 arch.001): T1 router layer.
 //
 // VERB ROUTING (3 verbs covered by THIS domain; 9 others belong to cross_repo_publish or other tools):
 //   list / get / cite / validate -> manifest_query  (papers.cond.1)
 //   verify                       -> doi_verify      (cross_repo_publish.cond.3)
 //   publish                      -> zenodo_publish  (cross_repo_publish.cond.2)
 //
-// raw#10 caveats:
 //   (1) bin/papers is the live entrypoint; this router is an additive map for
 //       cold-read agents (raw 271 README.ai.md style discoverability).
 //   (2) Env override `PAPERS_OP_FORCE=<name>` for diagnostic-pin only — does

@@ -5,19 +5,15 @@
 // @usage(hexa /Users/ghost/core/papers/core/cross_repo_publish/registry.hexa)
 // @omega-saturation-exempt("read-only registry; selftest is pure")
 //
-// raw#9 hexa-only strict. raw 270/271/272/273 (mk2 arch.001): T1 registry layer.
 //
 // REGISTERED OPERATIONS (3, cross_repo_publish domain):
 //   publish    -- single-paper Zenodo publish workflow             WRAPPED  cond.2
 //   sync       -- bi-directional manifest <-> Zenodo reconcile     WRAPPED  cond.3
-//   validate   -- own#9 sister-repo lint (cross-repo canonical)    WRAPPED  cond.1
 //
-// raw#10 caveats:
 //   (1) `publish` op currently single-archive (Zenodo). OSF dual-archive is
 //       Phase 2 (cross_repo_publish.blk.1 active blocker) — `is_dual_archive`
 //       remains 0 until tool/osf_publish.hexa lands.
 //   (2) `sync` is bi-directional (manifest <- Zenodo); writes manifest.json.
-//   (3) `validate` BLOCKs on sister-repo paper duplication (own#9), WARNs on
 //       grandfather-mark exempt entries.
 
 // --- struct mirror ---

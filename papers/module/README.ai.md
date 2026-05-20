@@ -135,7 +135,6 @@ PAPERS_OP_FORCE=zenodo_publish hexa.real /Users/ghost/core/papers/papers/core/ro
 - This `README.ai.md` MUST exist as literal `README.ai.md` (raw 271 mandate).
 - Import direction: T2 modules -> T1 core registry -> T0 source. Reverse FORBIDDEN.
 
-## raw#10 caveats (read before relying)
 
 1. **FACADE-only by default.** No shell-out unless `PAPERS_FACADE_SHELL=1`.
    The 3 modules NEVER duplicate logic from `tool/<name>.hexa`. Migration of

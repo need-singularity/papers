@@ -5,7 +5,6 @@
 // @usage(hexa /Users/ghost/core/papers/papers/module/manifest_query.hexa [--shell-out args...])
 // @omega-saturation-exempt("FACADE; selftest is meta-only, no tool/ exec")
 //
-// raw#9 hexa-only strict. raw 270/271/272/273 (mk2 arch.001): T2 module impl layer.
 //
 // REFERENCED tool/ FILE (use, link, deps; in-place change FORBIDDEN):
 //   tool/manifest_query.hexa    — 986 LOC, read-only manifest.json query engine

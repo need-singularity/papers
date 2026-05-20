@@ -1,8 +1,0 @@
-{"ts":"2026-04-28T14:23:03Z","tool":"keyword_search","query":"phi","verdict":"PASS","hits":5,"detail":"tokens=1"}
-{"ts":"2026-04-28T14:23:04Z","tool":"keyword_search","query":"topology AND anomaly","verdict":"PASS","hits":0,"detail":"tokens=3"}
-{"ts":"2026-04-28T14:23:04Z","tool":"keyword_search","query":"consciousness OR phi","verdict":"PASS","hits":3,"detail":"tokens=3"}
-{"ts":"2026-04-28T14:23:05Z","tool":"keyword_search","query":"paper NOT draft","verdict":"PASS","hits":0,"detail":"tokens=3"}
-{"ts":"2026-04-28T14:23:05Z","tool":"keyword_search","query":"__nonexistent_xyz__","verdict":"PASS","hits":0,"detail":"tokens=1"}
-{"ts":"2026-04-28T14:23:11Z","tool":"keyword_search","query":"tension AND consciousness","verdict":"PASS","hits":5,"detail":"tokens=3"}
-{"ts":"2026-04-28T14:23:12Z","tool":"keyword_search","query":"consciousness NOT mitosis","verdict":"PASS","hits":3,"detail":"tokens=3"}
-{"ts":"2026-04-28T14:23:42Z","tool":"keyword_search","query":"phi","verdict":"PASS","hits":3,"detail":"tokens=1"}

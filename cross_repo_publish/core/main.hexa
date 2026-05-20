@@ -5,7 +5,6 @@
 // @usage(hexa /Users/ghost/core/papers/core/cross_repo_publish/main.hexa)
 // @omega-saturation-exempt("aggregator only; no I/O outside selftest")
 //
-// raw#9 hexa-only strict. raw 270/271/272/273 (mk2 arch.001): T1 aggregator.
 //
 // NAMING DEVIATION (caveat C1 in handoff):
 //   This file is `main.hexa` per user task spec, NOT `cross_repo_publish_main.hexa`.

@@ -1,24 +1,19 @@
 #!hexa strict
 // papers/modules/cross_repo_publish/validate.hexa — FACADE for tool/papers_cross_repo_lint.hexa
 //
-// @tool(slug="xrp_modules_validate", desc="FACADE that exposes papers/tool/papers_cross_repo_lint.hexa under the canonical raw 270/271/272/273 module pattern. own#9 sister-repo canonical lint (BLOCK on duplicate, WARN on grandfather-mark exempt).")
 // @usage(hexa /Users/ghost/core/papers/modules/cross_repo_publish/validate.hexa)
 // @omega-saturation-exempt("FACADE; selftest is meta-only")
 //
-// raw#9 hexa-only strict. raw 270/271/272/273 (mk2 arch.001): T2 module impl layer.
 //
 // REFERENCED tool/ FILE (use, link, deps; in-place change FORBIDDEN):
-//   tool/papers_cross_repo_lint.hexa  — 388 LOC, own#9 v1.2 sister-repo lint
 //
 // SCOPE:
 //   Lints sister repos (anima/nexus/canon/sedi/brainwire/tecs-l) for
-//   paper artifact duplication. own#9 mandate: paper artifacts MUST live in
 //   papers/<sub>/ only. Sister-repo self-publish is FORBIDDEN.
 //
 // CLASSIFIER:
 //   - BLOCK: duplicate paper found in sister repo (must be removed or moved
 //     to papers/<sub>/).
-//   - WARN:  grandfather-mark exempt entries (pre-own#9 land; tracked).
 
 // --- struct mirror ---
 
@@ -78,7 +73,6 @@ fn xrp_op_invoke_validate(args: [str]) -> XrpOpResult {
     }
     if force_shell != "1" {
         return xrp_op_result_ok(
-            "FACADE: would invoke `" + argv + "` (set PAPERS_FACADE_SHELL=1 to actually exec; read-only own#9 lint)",
             "facade-meta-only"
         )
     }
@@ -113,7 +107,6 @@ fn _selftest_validate() -> int {
 }
 
 fn main() {
-    println("[modules/xrp/validate] FACADE for tool/papers_cross_repo_lint.hexa (own#9 v1.2)")
     if _selftest_validate() == 1 {
         println("[modules/xrp/validate] SELFTEST PASS")
     } else {

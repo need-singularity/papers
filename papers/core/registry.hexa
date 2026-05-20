@@ -5,14 +5,12 @@
 // @usage(hexa /Users/ghost/core/papers/core/papers/registry.hexa)
 // @omega-saturation-exempt("read-only registry; selftest is pure")
 //
-// raw#9 hexa-only strict. raw 270/271/272/273 (mk2 arch.001): T1 registry layer.
 //
 // REGISTERED OPERATIONS (3, papers domain self-scope):
 //   manifest_query  -- read-only manifest query (list/get/cite/validate/count) WRAPPED
 //   doi_verify      -- DOI/Zenodo link health check                            WRAPPED
 //   zenodo_publish  -- single-paper Zenodo publish workflow                    WRAPPED
 //
-// raw#10 caveats:
 //   (1) Registry FACADE-only. Real impl lives in tool/<name>.hexa (additive
 //       only policy this BG cycle).
 //   (2) cross_repo_publish operations (publish/sync/validate) belong to the

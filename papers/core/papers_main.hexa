@@ -5,7 +5,6 @@
 // @usage(hexa /Users/ghost/core/papers/core/papers/papers_main.hexa)
 // @omega-saturation-exempt("aggregator only; no I/O outside selftest")
 //
-// raw#9 hexa-only strict. raw 270/271/272/273 (mk2 arch.001): T1 aggregator
 // (`<feature>_main` stem MUST equal feature name `papers`).
 //
 // Aggregates selftest evidence from:

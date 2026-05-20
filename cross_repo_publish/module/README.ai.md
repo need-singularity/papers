@@ -12,7 +12,6 @@ upstream_dependency:
   tools:
     - papers/tool/zenodo_publish.hexa          # 619 LOC, single-paper publish
     - papers/tool/zenodo_sync.hexa             # 207 LOC, manifest <-> Zenodo bulk sync
-    - papers/tool/papers_cross_repo_lint.hexa  # 388 LOC, own#9 v1.2 sister-repo lint
   blocked:
     - papers/tool/osf_publish.hexa             # NOT YET LANDED (cross_repo_publish.blk.1)
 markers:
@@ -27,7 +26,6 @@ mk2_scope: peer (papers repo, additive raw 270/271/272/273 land)
 raw 270/271/272/273 (mk2 arch.001) canonical 4-file pattern applied to the
 `cross_repo_publish` flow domain. Three FACADE modules wrap authoritative
 `tool/*.hexa` files. Sister-repo paper artifacts route through here per
-own#9 (canonical archive locus = `papers/<sub>/`).
 
 ## TL;DR for an agent reading this cold
 
@@ -39,7 +37,6 @@ own#9 (canonical archive locus = `papers/<sub>/`).
   reconcile).
 - FACADE meta-only by default. Set `PAPERS_FACADE_SHELL=1` to actually shell
   out via `hexa.real`.
-- own#9 enforcement: sister-repo paper artifacts MUST land in `papers/<sub>/`
   only (anima / nexus / CANON / sedi / brainwire / tecs-l). Sister-
   repo self-publish FORBIDDEN.
 
@@ -47,11 +44,9 @@ own#9 (canonical archive locus = `papers/<sub>/`).
 
 ```
 sister-repo paper artifact
-  |- (own#9 canonical archive: papers/<sub>/<paper-id>/)
        |- cross_repo_publish/core/router.hexa     (verb -> op)
             |- cross_repo_publish/core/registry.hexa
                  |- cross_repo_publish/module/validate.hexa  WRAPPED  cond.1
-                 |    `- tool/papers_cross_repo_lint.hexa            (388 LOC; own#9 v1.2)
                  |- cross_repo_publish/module/publish.hexa   WRAPPED  cond.2
                  |    `- tool/zenodo_publish.hexa                    (619 LOC; secret token)
                  `- cross_repo_publish/module/sync.hexa      WRAPPED  cond.3
@@ -121,7 +116,6 @@ PAPERS_FACADE_SHELL=1 hexa.real /Users/ghost/core/papers/cross_repo_publish/modu
 XRP_OP_FORCE=sync hexa.real /Users/ghost/core/papers/cross_repo_publish/core/router.hexa
 ```
 
-## own#9 canonical archive rule (the cross-repo invariant)
 
 > Paper artifacts (PDF / source / DOI metadata) for any sister repo MUST land
 > in `papers/<sub>/<paper-id>/` only. Sister-repo self-publish (i.e. landing
@@ -130,7 +124,6 @@ XRP_OP_FORCE=sync hexa.real /Users/ghost/core/papers/cross_repo_publish/core/rou
 The `validate` op enforces this via `tool/papers_cross_repo_lint.hexa` v1.2:
 - **BLOCK**: duplicate paper artifact found in sister repo (must be removed
   or relocated to `papers/<sub>/`).
-- **WARN**: grandfather-mark exempt entries (pre-own#9 land; tracked but not
   block).
 
 ## Adding a new cross-repo publish op (template)
@@ -164,7 +157,6 @@ When `tool/osf_publish.hexa` lands:
 - This `README.ai.md` MUST exist (raw 271 mandate).
 - Import direction: T2 modules -> T1 core registry -> T0 source. Reverse FORBIDDEN.
 
-## raw#10 caveats (read before relying)
 
 1. **Aggregator stem deviation.** `main.hexa` (per user task spec) instead of
    `cross_repo_publish_main.hexa`. Raw 270 (mk2 arch.001 falsifier

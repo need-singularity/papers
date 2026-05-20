@@ -5,7 +5,6 @@
 // @usage(hexa /Users/ghost/core/papers/papers/core/source.hexa)
 // @omega-saturation-exempt("interface-only; no I/O")
 //
-// raw#9 hexa-only strict. raw#15 SSOT this file for the papers operation contract.
 // raw 270/271/272/273 (mk2 arch.001): T0 source layer of canonical 4-file pattern.
 //
 // CONTRACT (every operation module under papers/module/ must export):
@@ -17,7 +16,6 @@
 //   tool/doi_verify.hexa       — DOI link health verifier (201 LOC)
 //   tool/zenodo_publish.hexa   — single-paper Zenodo publish (619 LOC)
 //
-// raw#10 caveats:
 //   (1) tool/* files remain authoritative for their operations. papers/module/*
 //       are thin facade entries that delegate via exec("hexa.real tool/<name>.hexa ...").
 //   (2) Migration of tool/* logic into papers/module/* is NOT in scope for this

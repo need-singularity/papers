@@ -5,7 +5,6 @@
 // @usage(hexa /Users/ghost/core/papers/modules/cross_repo_publish/publish.hexa <paper-id>)
 // @omega-saturation-exempt("FACADE; selftest is meta-only, no actual publish")
 //
-// raw#9 hexa-only strict. raw 270/271/272/273 (mk2 arch.001): T2 module impl layer.
 //
 // REFERENCED tool/ FILE (use, link, deps; in-place change FORBIDDEN):
 //   tool/zenodo_publish.hexa  — 619 LOC, single-paper Zenodo publish

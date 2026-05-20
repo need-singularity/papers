@@ -163,7 +163,6 @@ bin/papers publish <paper-id>
 | B27 | `pp_cert_chain` | 논문 PDF 해시 → Merkle chain (anima cert_gate 응용) |
 | B28 | `pp_bench_drift` | 논문 내 experiment 벤치 수치 history drift |
 | B29 | `pp_api_drift` | Zenodo/arXiv API spec vs 우리 wrapper |
-| B30 | `pp_raw_coverage` | raw# 규칙 적용률 (hexa-lang raw#15 mirror) |
 
 ---
 

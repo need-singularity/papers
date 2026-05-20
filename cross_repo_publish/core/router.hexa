@@ -5,16 +5,13 @@
 // @usage(hexa /Users/ghost/core/papers/core/cross_repo_publish/router.hexa)
 // @omega-saturation-exempt("read-only routing; selftest is pure")
 //
-// raw#9 hexa-only strict. raw 270/271/272/273 (mk2 arch.001): T1 router layer.
 //
 // VERB ROUTING (3 verbs covered by THIS domain):
 //   publish  -> publish    (cross_repo_publish.cond.2)
 //   sync     -> sync       (cross_repo_publish.cond.3)
 //   lint     -> validate   (cross_repo_publish.cond.1)
 //
-// raw#10 caveats:
 //   (1) `lint` verb dispatches to BOTH papers_lint (papers domain self-rules
-//       8-rule own check) AND papers_cross_repo_lint (own#9 sister-repo check).
 //       This router covers only the cross-repo variant; the self-rule lint
 //       belongs to a future papers.cond.lint-self entry.
 //   (2) `scan` verb (meta/continuous/missing-doi/orphan) belongs to a sub-

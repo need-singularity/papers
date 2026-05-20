@@ -5,7 +5,6 @@
 // @usage(hexa /Users/ghost/core/papers/modules/cross_repo_publish/sync.hexa)
 // @omega-saturation-exempt("FACADE; selftest is meta-only, no actual sync")
 //
-// raw#9 hexa-only strict. raw 270/271/272/273 (mk2 arch.001): T2 module impl layer.
 //
 // REFERENCED tool/ FILE (use, link, deps; in-place change FORBIDDEN):
 //   tool/zenodo_sync.hexa  — 207 LOC, manifest <-> Zenodo bulk reconcile

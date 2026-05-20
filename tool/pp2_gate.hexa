@@ -6,7 +6,6 @@
 // @omega-saturation-exempt("single-file regex scan; bounded in O(file_size) per pass")
 // @exit_codes(0=PASS or --skip used, 1=FAIL markers missing, 2=usage/io error)
 //
-// Migrated from scripts/pp2_gate.py (deleted in commit 3f61313 raw#9 hexa-only
 // cleanup). External contract preserved: same flags, same exit codes, same
 // stdout report shape. Internal implementation is now hexa-native; python3
 // dependency reduced to zero on the gate hot-path.
